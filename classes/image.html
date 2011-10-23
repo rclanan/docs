@@ -960,6 +960,96 @@ Image::load('filename.gif')
 					</tbody>
 				</table>
 			</article>
+			<article>
+				<h4 class="method" id="method_grayscale">grayscale()</h4>
+				<p>Turns the image into a grayscale version.</p>
+				<table class="method">
+					<tbody>
+					<tr>
+						<th class="legend">Static</th>
+						<td>Yes</td>
+					</tr>
+					<tr>
+						<th>Returns</th>
+						<td>Image_Driver</td>
+					</tr>
+					<tr>
+						<th>Example</th>
+						<td>
+							<pre class="php"><code>// Grayscale the image
+Image::load('filename.gif')
+	->grayscale();</code></pre>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</article>
+			<article>
+				<h4 class="method" id="method_sizes">sizes($filename = null)</h4>
+				<p>Returns sizes for the currently loaded image, or the image given in the $filename.</p>
+				<table class="method">
+					<tbody>
+					<tr>
+						<th class="legend">Static</th>
+						<td>Yes</td>
+					</tr>
+					<tr>
+						<th>Parameters</th>
+						<td>
+							<table class="parameters">
+								<tr>
+									<th>Param</th>
+									<th>Default</th>
+									<th class="description">Description</th>
+								</tr>
+	
+								<tr>
+									<th><kbd>$filename</kbd></th>
+									<td><i>Required</i></td>
+									<td>The location of the file to get sizes for.</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<th>Returns</th>
+						<td>object</td>
+					</tr>
+					<tr>
+						<th>Example</th>
+						<td>
+							<pre class="php"><code>
+Image::load('filename.gif')
+	->sizes();
+Image::sizes('filename.gif');</code></pre>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</article>
+			<article>
+				<h4 class="method" id="method_reload">reload()</h4>
+				<p>Reloads the image.</p>
+				<table class="method">
+					<tbody>
+					<tr>
+						<th class="legend">Static</th>
+						<td>Yes</td>
+					</tr>
+					<tr>
+						<th>Returns</th>
+						<td>Image_Driver</td>
+					</tr>
+					<tr>
+						<th>Example</th>
+						<td>
+							<pre class="php"><code>
+Image::reload();</code></pre>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</article>
 
 		</div>
 
